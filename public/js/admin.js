@@ -1575,3 +1575,7 @@
 			window.admin = new admin();
 	});
 })(jQuery);
+$(document).ajaxError(
+		function (event, jqXHR, ajaxSettings, thrownError) {
+			alert('Error saving model: ' + JSON.parse(jqXHR.responseText).message);
+		});
