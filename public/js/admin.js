@@ -1577,5 +1577,5 @@
 })(jQuery);
 $(document).ajaxError(
 		function (event, jqXHR, ajaxSettings, thrownError) {
-			alert('Error saving model: ' + JSON.parse(jqXHR.responseText).message);
+			alert('Error saving model: ' + JSON.parse(jqXHR.responseText).error.message);
 		});
